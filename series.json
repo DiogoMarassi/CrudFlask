@@ -1,0 +1,28 @@
+{
+    "series": [
+        {
+            "id": 1,
+            "name": "Braking Bad",
+            "description": "Professor com cancer vira cozinheiro de metafetamina",
+            "notaImdb": "10",
+            "dataLancamento": "01/01/2006",
+            "imagem": "Walter_White_S5B.png"
+        },
+        {
+            "id": 2,
+            "name": "Prision Break",
+            "description": "Irmao tenta tirar o outro irmao da pris\u00e3o. Ele foi preso injustamente.",
+            "notaImdb": "8",
+            "dataLancamento": "21/08/2002",
+            "imagem": "unnamed.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Bebe Rena",
+            "description": "Uma stalker maluca persegue um comediante de stand up. A s\u00e9rie come\u00e7a boba mais vai tomando um rumo s\u00e9rio e profundo.",
+            "notaImdb": "9",
+            "dataLancamento": "10/03/2024",
+            "imagem": "1200x1200bb.jpg"
+        }
+    ]
+}

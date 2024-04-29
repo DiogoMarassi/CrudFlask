@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='detail_style.css') }}">
+    <title>Detalhes</title>
+    <!-- Adicione os estilos necessários aqui -->
+</head>
+<body>
+  <div class='tudo'>
+    <h1>Detalhes da serie</h1>
+    <div class='item-card''>
+        <h2>{{ item['name'] }}</h2>
+        <p>Descrição: {{ item['description'] }}</p>
+        <p>Nota do IMDB: {{ item['notaImdb'] }}</p>
+        <p>Data de Lançamento: {{ item['dataLancamento'] }}</p>
+    </div>
+    <a href="{{ url_for('index') }}">Voltar para lista</a>
+    <!-- Adicione scripts necessários aqui -->
+  </div>
+</body>
+</html>

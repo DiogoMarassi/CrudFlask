@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+    <title>Atualizar Série</title>
+    <!-- Adicione os estilos necessários aqui -->
+</head>
+<body>
+  <div class='container'>
+    <h1>Atualizar Série</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.name.label(class="form-control-label") }}
+            {{ form.name(class="form-control form-control-lg") }}
+        </div>
+        <div class="form-group">
+            {{ form.description.label(class="form-control-label") }}
+            {{ form.description(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.notaImdb.label(class="form-control-label") }}
+            {{ form.notaImdb(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.dataLancamento.label(class="form-control-label") }}
+            {{ form.dataLancamento(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.imagem.label(class="form-control-label") }}
+            {{ form.imagem(class="form-control-file") }}
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+</body>
+</html>

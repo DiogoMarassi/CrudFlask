@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <title>Adicionar nova serie</title>
+    <!-- Adicione os estilos necessários aqui -->
+</head>
+<body>
+  <div class='tudo'>
+    <h1>Adicionar nova Serie</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <div>
+            {{ form.name.label }} {{ form.name(size=32) }}
+        </div>
+        <div>
+            {{ form.description.label }} {{ form.description(size=64) }}
+        </div>
+        <div>
+            {{ form.notaImdb.label }} {{ form.notaImdb(size=10) }}
+        </div>
+        <div>
+            {{ form.dataLancamento.label }} {{ form.dataLancamento(size=64) }}
+        </div>
+        <div>
+            {{ form.imagem.label }} {{ form.imagem }}
+        </div>
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Items List</a>
+  </div>
+  <div class="popup" onclick="myFunction()">Click me!
+    <span class="popuptext" id="myPopup">Popup text...</span>
+  </div>
+</body>
+</html>
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='excluir_style.css') }}">
+    <title>Excluir Serie</title>
+    <!-- Adicione os estilos necessários aqui -->
+</head>
+<body>
+    <h1>Excluir Série</h1>
+    <p>Tem certeza que deseja deletar "{{ item['name'] }}"?</p>
+    <form method="POST">
+        <button type="submit">Deletar</button>
+    </form>
+    <a href="{{ url_for('index') }}">Cancelar</a>
+    <!-- Adicione scripts necessários aqui -->
+</body>
+</html>
